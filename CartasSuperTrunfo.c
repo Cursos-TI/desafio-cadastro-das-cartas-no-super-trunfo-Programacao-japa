@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    //Dados da carta 1
+    //Variáveis da carta 1
     char estado1[50];
     char codigo1[10];
     char nomeCidade1[50];
@@ -10,7 +10,7 @@ int main() {
     float pib1;
     int numeroDePontosTuristicos1;
 
-    //Dados da carta 2
+    //Variáveis da carta 2
     char estado2[50];
     char codigo2[10];
     char nomeCidade2[50];
@@ -19,8 +19,8 @@ int main() {
     float pib2;
     int numeroDePontosTuristicos2;
 
-    // Instruções carta 1
-    printf("Digite os dados da carta 1\n");
+    //Dados da carta 1
+    printf("\nDigite os dados da carta 1\n");
 
     printf("Digite o estado: ");
     scanf("%s", estado1);
@@ -29,7 +29,7 @@ int main() {
     scanf("%s", codigo1);
 
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]", nomeCidade1);
+    scanf("%s", nomeCidade1);
 
     printf("Digite a população: ");
     scanf("%d", &populacao1);
@@ -43,7 +43,7 @@ int main() {
     printf("Digite o número de pontos turisticos: ");
     scanf("%d", &numeroDePontosTuristicos1);
 
-    //Istruções da carta 2
+    //Dados da carta 2
     printf("\nDigite os dados da carta 2\n");
 
     printf("Digite o estado: ");
@@ -53,7 +53,7 @@ int main() {
     scanf("%s", codigo2);
 
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]", nomeCidade2);
+    scanf("%s", nomeCidade2);
 
     printf("Digite a população: ");
     scanf("%d", &populacao2);
@@ -71,7 +71,7 @@ int main() {
     printf("\n--- DADOS DA CARTA 1 ---\n");
     printf("Estado: %s\n", estado1);
     printf("Código: %s\n", codigo1);
-    printf("Nome da cidade: %s\n," nomeCidade1);
+    printf("Nome da cidade: %s\n", nomeCidade1);
     printf("População: %d\n", populacao1);
     printf("Área em km²: %.2f\n", area1);
     printf("PIB em bilhões: %.2f\n", pib1);
